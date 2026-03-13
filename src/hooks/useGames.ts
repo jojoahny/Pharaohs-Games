@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import type { Game, GamesData } from "@/types/game";
 
 async function fetchGames(): Promise<Game[]> {
-  const res = await fetch("/data/games.json");
+  const res = await fetch("./data/games.json");
   const data: GamesData = await res.json();
   // Flatten all segments into one list, deduplicate by id
   const map = new Map<string, Game>();
