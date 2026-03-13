@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pharaohs-games-hub.lovable.app/sitemap.xml
